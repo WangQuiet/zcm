@@ -1,0 +1,207 @@
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+form,
+fieldset,
+legend,
+img,
+input,
+div,header,footer,section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+fieldset,
+img {
+  border: none;
+}
+img {
+
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ul,
+ol {
+  list-style: none;
+}
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "SimSun", "宋体";
+}
+input::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+select,
+input {
+  vertical-align: middle;
+}
+select,
+input,
+textarea {
+  font-size: 12px;
+  margin: 0;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+  outline-style: none;
+  -webkit-appearance: none;
+}
+textarea {
+  resize: none;
+}
+input,
+textarea {
+  background: none;
+  border: none;
+}
+table {
+  border-collapse: collapse;
+}
+body {
+  color: #333;
+  font: 12px/1.5 "微软雅黑", "宋体", "Arial Narrow", HELVETICA;
+  background: #fff;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+a:visited {
+}
+a:hover,
+a:active,
+a:focus {
+  color: #ff8400;
+  text-decoration: none;
+}
+html{
+	font-size: 100px;
+}
+body{
+	background-color: #F9F9F9;
+}
+/*登入页面*/
+header{
+	height:0.92rem;
+	background: #FA3432;
+	display: flex;
+	padding: 0 0.38rem 0 0.3rem;
+	color:#FFFFFF;
+	font-size: 0.28rem;
+	justify-content: space-between;
+	padding-top: 0.3rem;
+	line-height: 1;
+}
+header .icon-fanhui{
+	font-size: 0.4rem;
+	color:#FFFFFF;
+}
+header .icon-caidan{
+	font-size: 0.35rem;
+	color:#FFFFFF;
+}
+.logo-field{
+	padding-top: 0.57rem;
+	height: 3.3rem;
+	display: flex;
+	justify-content: center;
+}
+.logo{
+	background: url(../img/login_img.png) no-repeat 0 0;
+	background-size: 1.92rem 1.92rem;
+	width: 2.3rem;
+	height:2.3rem;
+}
+
+.user form{
+	width: 100%;
+}
+.phonenumber-info{
+	line-height: 1.0;
+	font-size: 0.26rem;
+	color:#0e0e0e;
+	margin-bottom: 0.22rem;
+	margin-left: 0.38rem;
+	width: 100%;
+	display: block;
+}
+.phonenumberc{
+	margin: 0 0.23rem;
+}
+#phonenumber{
+	border-radius: 0.05rem;
+	border: 1px solid #EEE;
+	width: 100%;
+	height: 0.78rem;
+	display: flex;
+	font-size: 0.32rem;
+	text-indent: 2em;
+	background: #FFFFFF url(../img/phone.png) no-repeat 0.15rem 0.1rem;
+	background-size: 0.35rem 0.60rem;
+}
+.nextc{
+	margin:0 0.29rem;
+}
+.next{
+	color:#fff;
+	background-color: #FA3432;
+	height: 0.80rem;
+	line-height: 0.80rem;
+	width: 100%;
+	background-origin: content-box;
+	font-size: 0.30rem;
+	margin-top: 0.23rem;
+	border-radius: 0.05rem;
+}
+.xieyi{
+	text-align: center;
+	margin-top: 0.22rem;
+	line-height: 1.0;
+	font-size: 0.22rem;
+	margin-bottom: 1.79rem;
+}
+/*----------------------------footer区域-----------------------------------*/
+footer{
+	border-top: 1px solid #EEEEEE;
+	height:1.65rem;
+	padding-top: 0.45rem;
+	line-height: 1.0;
+	color:#9a9a9a;
+	font-size: 0.26rem;
+	text-align: center;
+	background-color: #FFFFFF;
+	}
+footer .first{
+	font-size: 0.28rem;
+	color: #484848;
+	margin-bottom: 0.25rem;
+	
+	}
+	
+
+/*----------------------------footer区域开始-----------------------------------*/

@@ -1,0 +1,271 @@
+body{
+	background-color: #F9f9f9;
+}
+/*----------------------------轮播图区域-----------------------------------*/
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe img {
+  width: 100%;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap li {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+.indirector {
+  position: absolute;
+  bottom: 0.2rem;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+.indirector li {
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 50%;
+  background-color: #CCCCCC;
+  margin: 0 0.1rem;
+  float: left;
+}
+.indirector li.on {
+  background-color: #FF8400;
+}
+/*----------------------------轮播图区域结束-----------------------------------*/
+/*----------------------------安全保障区域-----------------------------------*/
+.introduce {
+  height: 2.0rem;
+  background-color: #fff;
+  padding: 0 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.introduce .iconfont {
+  display: block;
+  border-radius: 0.3rem;
+  font-size: 0.5rem;
+  color: #fff;
+  margin: 0 auto 0.2rem;
+  width: 0.9rem;
+  height: 0.9rem;
+  line-height: 0.9rem;
+}
+.introduce .icon-suo {
+  background-color: #4099E9;
+}
+.introduce .icon-women {
+  background-color: #FB6361;
+}
+.introduce .icon-xinshouzhiyin {
+  background-color: #40C8B0;
+}
+.introduce .icon-wenti {
+  background-color: #FFAE28;
+}
+.introduce p {
+  font-size: 0.26rem;
+  color: #808080;
+}
+/*----------------------------安全保障区域-----------------------------------*/
+/*----------------------------热门产品区域-----------------------------------*/
+.product h2 {
+  border-top: 1px solid #E9E9E9;
+  height: 0.95rem;
+  padding: 0 0.4rem 0 0.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.3rem;
+}
+.product .hot {
+  padding-left: 0.6rem;
+  width: 1.9rem;
+  height: 0.44rem;
+  color: #494848;
+  background: url(../img/hot.png) no-repeat;
+  background-size: 0.44rem 0.44rem;
+}
+.product .more {
+  color: #9a9b9c;
+}
+.data {
+  border: 1px solid #ddd;
+  margin: 0 0.23rem;
+  padding: 0.25rem;
+  border-radius: 0.05rem;
+  background-color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+.data.last{
+	margin-bottom: 0;
+}
+.data .data-plan {
+  font-size: 28px;
+  color: #494848;
+  line-height: 1.0;
+}
+.data h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.data .benefit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.22rem;
+  color: #fff;
+  text-align: center;
+  line-height: 0.3rem;
+}
+.data .cash {
+  margin-right: 0.05rem;
+  background-color: #FFAB37;
+  width: 0.85rem;
+  height: 0.3rem;
+  border-radius: 0.05rem;
+  font-style: normal;
+}
+.data .icon-vip {
+  height: 0.3rem;
+  width: 0.33rem;
+  background-color: #ff7404;
+  border-radius: 0.05rem;
+  font-size: 0.28rem;
+}
+
+.data .data-main{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 0.28rem;
+
+	
+}
+.data .grow-percent{
+	font-size: 0.43rem;
+	color: #fB4034;
+}
+.data .grow em{
+	color:#FF7900;
+	font-size: 0.24rem;
+	font-style: normal;
+}
+.data-main .day{
+	font-size: 0.26rem;
+	color:#9a9a9a;
+	line-height: 1.0;
+	
+}
+.data-main .day .number{
+	color:#3b3c3c;
+}
+.data-main .day .first{
+	margin-bottom: 0.3rem;
+}
+/*----------------------------热门产品区域结束-----------------------------------*/
+/*----------------------------企业动态区域-----------------------------------*/
+.trends{
+  height: 0.95rem;
+  padding: 0 0 0 0.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.trends h2 {
+  padding-left: 0.6rem;
+  width: 2.5rem;
+  height: 0.40rem;
+  line-height: 0.40rem;
+  font-size:0.3rem;
+  color: #494848;
+  background: url(../img/home_ico_10.png) no-repeat;
+  background-size: 0.48rem 0.40rem;
+}
+.activity{
+	border-top: 1px solid #E1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+	padding: 0.35rem 0.23rem 0.35rem 0.23rem;
+	background-color: #FFFFFF;
+	margin-bottom: 0.23rem;
+	}
+	
+.activity-item{
+	display: flex;
+	flex:1 1 auto;
+	margin-bottom: 0.35rem;
+}
+.activity-item.last{
+	margin-bottom: 0;
+	}
+.activity-info{
+	flex:1 1 auto;
+	font-size: 0.23rem;
+	
+}
+.activity-info h3{
+	color:#494848;
+	margin-bottom: 0.15rem;
+	margin-top: 0.05rem;
+	}
+.activity-img{
+	width: 1.1rem;
+	height: 1.1rem;
+	margin-right: 0.23rem;
+	border-radius: 0.15rem;
+}
+.activity-origin{
+	display:flex;
+	justify-content: space-between;
+	color:#9A9A9A;
+}
+/*----------------------------企业动态区域结束-----------------------------------*/
+
+/*----------------------------footer区域-----------------------------------*/
+footer{
+	height:1.65rem;
+	padding-top: 0.45rem;
+	line-height: 1.0;
+	color:#9a9a9a;
+	font-size: 0.26rem;
+	text-align: center;
+	}
+footer .first{
+	font-size: 0.28rem;
+	color: #484848;
+	margin-bottom: 0.25rem;
+	
+	}
+	
+
+/*----------------------------footer区域开始-----------------------------------*/

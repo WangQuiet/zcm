@@ -1,0 +1,247 @@
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+form,
+fieldset,
+legend,
+img,
+input,
+div,header,footer,section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+fieldset,
+img {
+  border: none;
+}
+img {
+
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ul,
+ol {
+  list-style: none;
+}
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "SimSun", "宋体";
+}
+input::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+select,
+input {
+  vertical-align: middle;
+}
+select,
+input,
+textarea {
+  font-size: 12px;
+  margin: 0;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+  outline-style: none;
+  -webkit-appearance: none;
+}
+textarea {
+  resize: none;
+}
+input,
+textarea {
+  background: none;
+  border: none;
+}
+table {
+  border-collapse: collapse;
+}
+body {
+  color: #333;
+  background-color: #F9F9F9;
+  font: 12px/1.5 "微软雅黑", "宋体", "Arial Narrow", HELVETICA;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+a:visited {
+}
+a:hover,
+a:active,
+a:focus {
+  color: #ff8400;
+  text-decoration: none;
+}
+
+header{
+	height:0.92rem;
+	background: #FA3432;
+	display: flex;
+	padding: 0 0.38rem 0 0.3rem;
+	color:#FFFFFF;
+	font-size: 0.28rem;
+	justify-content: space-between;
+	align-items: center;
+	line-height: 1;
+}
+header .icon-fanhui{
+	font-size: 0.4rem;
+	color:#FFFFFF;
+}
+header .icon-caidan{
+	font-size: 0.35rem;
+	color:#FFFFFF;
+}
+/*-----------------------帮助中心列表开始------------------------------------*/
+.list{
+	padding: 0.13rem 0.3rem 0.09rem 0.3rem;
+	background-color: #F9F9F9;
+	color: #424141;
+}
+.list-item{
+	display: flex;
+	height:0.6rem;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 0.25rem;
+	margin-bottom: 0.27rem;
+}
+.item-main{
+	display: flex;
+	align-items: center;
+}
+.list-item .iconfont{
+	width:0.6rem;
+	height: 0.6rem;
+	background-color: #FA9A33;
+	font-size: 0.3rem;
+	text-align: center;
+	line-height: 0.6rem;
+	display: block;
+	margin-right: 0.321rem;
+	border-radius: 0.2rem;
+	color:#fff;
+	
+}
+.list-item .next{
+	color: #FA9A33;
+}
+
+.service{
+	height:1.27rem;
+	padding: 0.24rem 0 0 0.3rem;
+	display: flex;
+	line-height: 1.0;
+	margin-bottom: 0.23rem;
+	background-color: #FFFFFF;
+}
+
+.service .icon-dianhua{
+	height:0.8rem;
+	width: 0.8rem;
+	background-color: #22CFD8;
+	font-size: 0.4rem;
+	border-radius: 0.2rem;
+	color:#fff;
+	line-height: 0.8rem;
+	margin-right: 0.28rem;
+	text-align: center;
+}
+.service-right{
+	flex: 1 1 auto;
+}
+.service .hot{
+	height:0.26rem;
+	color:#333;
+	margin-bottom: 0.14rem;
+	margin-top: 0.05rem;
+	font-size: 0.26rem;
+}
+.service .hotline-number{
+	color:#01A0CD;
+	padding-left: 0.2rem;
+}
+.service .time{
+	color:#AFAEAE;
+	font-size: 0.18rem;
+}
+/*-----------------------帮助中心列表结束------------------------------------*/
+
+/*----------------------------footer区域-----------------------------------*/
+footer{
+	height:1.65rem;
+	padding-top: 0.45rem;
+	line-height: 1.0;
+	color:#9a9a9a;
+	font-size: 0.26rem;
+	text-align: center;
+	background-color: #FFFFFF;
+	}
+footer .first{
+	font-size: 0.28rem;
+	color: #484848;
+	margin-bottom: 0.25rem;
+	
+	}
+	
+
+/*----------------------------footer区域开始-----------------------------------*/
+/*-----------------------------遮照区域结束---------------------------------*/
+.mask{
+	position: absolute;
+	top:0.92rem;
+	left:0;
+	right: 0;
+	bottom:1.08rem;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+}
+nav{
+	height:1.4rem;
+	align-items: center;
+	display: flex;
+	background-color: #FFFFFF;
+}
+nav a{
+	width:25%;
+	height:1.0rem;
+	border-right: 1px solid #FDA6A4;
+	font-size: 0.26rem;
+	text-align: center;
+	color:#FDA6A4;
+}
+nav a:last-child{
+	border-right: none;
+}
+nav .iconfont{
+	font-size:0.4rem;
+	display: block;
+}
+/*-----------------------------遮照区域结束---------------------------------*/

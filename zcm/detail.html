@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的详情页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/detail.css"/>
+		<script src="js/zepto/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto/event.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto/touch.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var fs = document.documentElement.clientWidth / 750  * 100; 
+			document.querySelector("html").style.fontSize = fs + "px";
+		</script>
+	</head>
+	<body>
+		<header>
+			<a class="iconfont icon-fanhui" href="index.html"></a><span>盈信计划2467号1期</span><a class="iconfont icon-caidan" ></a>
+		</header>
+		<section class="raise">
+			<p class="grow">
+				9.2%+0.5%
+			</p>
+			<p class="grow-info">
+				<span>9.7%</span>(9.2%+活动加息0.5%)
+			</p>
+		</section>
+		<section class="project">
+			<div class="limit">
+				<a href="">1000元起投</a>| <a href="">期限180天</a>		
+			</div>
+			<div class="advantage-field">
+				<ul class="advantage">
+					<li><i class="iconfont icon-buoumaotubiao45"></i>省级律所法律支持</li>
+					<li><i class="iconfont icon-buoumaotubiao45"></i>浙大友创战略入股</li>
+					<li><i class="iconfont icon-buoumaotubiao45"></i>招财猫易贷严风控</li>
+					<li><i class="iconfont icon-buoumaotubiao45"></i>千万级风险保障金</li>
+				</ul>
+			</div>
+			<div class="progress">
+				<div class="point">
+					0%<i class="tri"></i>
+				</div>
+				<div class="progressbar">
+					<div class="progressbar-item" data-width="100"></div>
+				</div>
+			</div>
+			<div class="people">
+				<p>已投资 <span class="quantity">37</span> 人</p><p>剩余可投 <span class="quantity">623000</span> 元</p>
+			</div>
+			
+		</section>
+		<section class="seemore">
+			<a href="">查看更多项目</a>
+		</section>
+		<section class="evaluate">
+			<a href="" class="estimate">收益估算</a><a class="invest">立即投资</a>
+		</section>
+		<section class="mask" >
+			<nav>
+				<a href="index.html">
+					<i class="iconfont icon-zhuye"></i>  
+					<span>主页</span>  
+				</a>
+				<a>
+					<i class="iconfont icon-suo"></i>  
+					<span>安全保障</span>
+				</a>
+				<a>
+					<i class="iconfont icon-touzi"></i>  
+					<span>我要投资</span>
+					
+				</a>
+				<a>
+					<i class="iconfont icon-jiaruwomen"></i>  
+					<span>帐户中心</span>
+				</a>
+			</nav>
+		</section>
+		<script type="text/javascript">		
+			$(function(){
+				//滚动容器
+				$scrollContainer = $(".progressbar");
+				//获取整个元素的宽度
+				var width = $scrollContainer.width();
+				//滚动条
+				$scrollBar = $(".progressbar-item");	
+				//获取要滚动的值
+				var aim = $scrollBar.attr("data-width");
+				//滚动的距离
+				$scrollBar.css("width", aim*width/100+ "px");
+				
+				
+				//移动的距离 
+				var moveWidth = parseInt(width * aim / 100)  ;
+				console.log(aim,width,moveWidth);
+				//指示块
+				var $point = $(".point").css("transform", "translateX(" + moveWidth + "px)");
+				//指示块移动的距离
+				var percent = 0;
+				//更新指示百分比
+				var step = aim/30;
+				//定时器
+				var timer;
+				count = 0;
+				function showPer(){
+					count++;
+					percent = +(percent + step).toFixed(2);
+					timer = requestAnimationFrame(function(){
+						showPer();
+					});
+					if(percent > aim){
+						percent = aim;
+						cancelAnimationFrame(timer);
+					}
+					$point.html(percent+ "%");
+				}
+				showPer();
+			})
+			//显示遮照部分
+			 var $maskBtn = $(".icon-caidan");
+			 var $mask = $(".mask");
+			 //
+			 $maskBtn.on("tap",function(){
+			 	$mask.toggle();
+			 	console.log("tap")
+			 })
+		</script>
+	</body>
+</html>

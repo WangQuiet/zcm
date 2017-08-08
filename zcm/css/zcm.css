@@ -1,0 +1,207 @@
+.fl {
+  float: left;
+  *display: inline;
+}
+.fr {
+  float: right;
+  *display: inline;
+}
+.rel {
+  position: relative;
+}
+.abs {
+  position: absolute;
+}
+.fwb {
+  font-weight: bold;
+}
+.fwn {
+  font-weight: normal;
+}
+.vc {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hc {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.bt {
+  border-bottom: 1px solid #F1F1F1;
+}
+.br {
+  border-right: 1px solid #F1F1F1;
+}
+.mr20 {
+  margin-right: 20px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  content: ".";
+  overflow: hidden;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+.tbs {
+  color: #f40;
+}
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+form,
+fieldset,
+legend,
+img,
+div,header,footer,section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+fieldset,
+img {
+  border: none;
+}
+img {
+
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ul,
+ol {
+  list-style: none;
+}
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "SimSun", "宋体";
+}
+input::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+select,
+input {
+  vertical-align: middle;
+}
+select,
+input,
+textarea {
+  font-size: 12px;
+  margin: 0;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+  outline-style: none;
+  -webkit-appearance: none;
+}
+textarea {
+  resize: none;
+}
+input,
+textarea {
+  background: none;
+  border: none;
+}
+table {
+  border-collapse: collapse;
+}
+body {
+  color: #333;
+  font: 12px/1.5 "微软雅黑", "宋体", "Arial Narrow", HELVETICA;
+  background: #fff;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+a:visited {
+}
+a:hover,
+a:active,
+a:focus {
+  color: #ff8400;
+  text-decoration: none;
+}
+html{
+	font-size: 100px;
+}
+header{
+		font-size: 0.3rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 0.9rem;
+		color: #fff;
+    background-color: #FA3432;
+    padding: 0 0.32rem 0 0.18rem;
+}
+.logo{
+        background: url(../img/logo.png) no-repeat;
+        background-size: 0.47rem 0.49rem;
+        width:0.47rem;
+        height:0.49rem;
+        margin-right: 0.10rem;
+        display:flex;
+}
+.logofield{
+	display: flex;
+	align-items: center;
+}
+.user a{
+	color:#fff;
+}
+
+nav{
+	display: flex;
+	height:0.86rem;
+	padding: 0 0.70rem 0 0.90rem;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 0.24rem;
+}
+nav .currentPage{
+	color:#ff3636;
+}
+nav a{
+	color:#4b4a4a;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>帮助中心</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/help.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<script src="js/zepto/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto/event.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto/touch.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var fx = document.documentElement.clientWidth / 750 * 100;
+			document.querySelector("html").style.fontSize = fx + "px";
+		</script>
+	</head>
+	<body>
+		<header>
+			<a class="iconfont icon-fanhui" href="index.html" ></a><span>帮助中心</span><a class="iconfont icon-caidan"></a>
+		</header>
+		<section class="list">
+			<div class="list-item">
+				<span class ="item-main"><i class="iconfont icon-wenhao"></i>了解招财猫</span><span class="next">&gt;</span>
+			</div>
+			<div class="list-item">
+				<span class ="item-main"><i class="iconfont icon-wenhao"></i>注册/登入</span><span class="next">&gt;</span>
+			</div>
+			<div class="list-item">
+				<span class ="item-main"><i class="iconfont icon-wenhao"></i>认证</span><span class="next">&gt;</span>
+			</div>
+			<div class="list-item">
+				<span class ="item-main"><i class="iconfont icon-wenhao"></i>投资</span><span class="next">&gt;</span>
+			</div>
+			<div class="list-item">
+				<span class ="item-main"><i class="iconfont icon-wenhao"></i>充值，提现</span><span class="next">&gt;</span>
+			</div>
+			<div class="list-item">
+				<span class ="item-main"><i class="iconfont icon-wenhao"></i>名词解释</span><span class="next">&gt;</span>
+			</div>
+			<div class="list-item">
+				<span class ="item-main"><i class="iconfont icon-wenhao"></i>意见反馈</span><span class="next">&gt;</span>
+			</div>
+			<div class="list-item">
+				<span class ="item-main"><i class="iconfont icon-wenhao"></i>客户端下载</span><span class="next">&gt;</span>
+			</div>
+		</section>
+		<section class="service">
+			<i class="iconfont icon-dianhua"></i>
+			<div class="service-right">
+				<p class="hot"><span class="hotline">拨打客服热线</span><span class="hotline-number">400-991-7005</span></p>
+				<p class="time">周一至周五 9:00--20:00 周六至周日 9:00--18:00</p>
+			</div>
+		</section>
+		<footer>
+			<p class="first"><a href="">触屏版</a> | <a href="">电脑版</a> | <a href="">APP版</a></p>
+			<p >&copy;2017招财猫理财 浙ICP备 140411616号</p>
+		</footer>
+		<section class="mask" >
+			<nav>
+				<a href="index.html">
+					<i class="iconfont icon-zhuye"></i>  
+					<span>主页</span>  
+				</a>
+				<a>
+					<i class="iconfont icon-suo"></i>  
+					<span>安全保障</span>
+				</a>
+				<a>
+					<i class="iconfont icon-touzi"></i>  
+					<span>我要投资</span>
+					
+				</a>
+				<a>
+					<i class="iconfont icon-jiaruwomen"></i>  
+					<span>帐户中心</span>
+				</a>
+			</nav>
+		</section>
+		<script type="text/javascript">		
+			$(function(){
+				//滚动容器
+				$scrollContainer = $(".progressbar");
+				//获取整个元素的宽度
+				var width = $scrollContainer.width();
+				//滚动条
+				$scrollBar = $(".progressbar-item");	
+				//获取要滚动的值
+				var aim = $scrollBar.attr("data-width");
+				//滚动的距离
+				$scrollBar.css("width", aim*width/100+ "px");
+				
+				
+				//移动的距离 
+				var moveWidth = parseInt(width * aim / 100)  ;
+				console.log(aim,width,moveWidth);
+				//指示块
+				var $point = $(".point").css("transform", "translateX(" + moveWidth + "px)");
+				//指示块移动的距离
+				var percent = 0;
+				//更新指示百分比
+				var step = aim/30;
+				//定时器
+				var timer;
+				count = 0;
+				function showPer(){
+					count++;
+					percent = +(percent + step).toFixed(2);
+					timer = requestAnimationFrame(function(){
+						showPer();
+					});
+					if(percent > aim){
+						percent = aim;
+						cancelAnimationFrame(timer);
+					}
+					$point.html(percent+ "%");
+				}
+				showPer();
+			})
+			//显示遮照部分
+			 var $maskBtn = $(".icon-caidan");
+			 var $mask = $(".mask");
+			 //
+			 $maskBtn.on("tap",function(){
+			 	$mask.toggle();
+			 	console.log("tap")
+			 })
+		</script>
+	</body>
+</html>

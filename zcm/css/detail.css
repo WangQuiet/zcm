@@ -1,0 +1,337 @@
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+form,
+fieldset,
+legend,
+img,
+input,
+div,header,footer,section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+fieldset,
+img {
+  border: none;
+}
+img {
+
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ul,
+ol {
+  list-style: none;
+}
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "SimSun", "宋体";
+}
+input::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+select,
+input {
+  vertical-align: middle;
+}
+select,
+input,
+textarea {
+  font-size: 12px;
+  margin: 0;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+  outline-style: none;
+  -webkit-appearance: none;
+}
+textarea {
+  resize: none;
+}
+input,
+textarea {
+  background: none;
+  border: none;
+}
+table {
+  border-collapse: collapse;
+}
+body {
+  color: #333;
+  font: 12px/1.5 "微软雅黑", "宋体", "Arial Narrow", HELVETICA;
+  background: #fff;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+a:visited {
+}
+a:hover,
+a:active,
+a:focus {
+  color: #ff8400;
+  text-decoration: none;
+}
+html{
+	font-size: 100px;
+}
+body{
+	background-color: #F9F9F9;
+}
+
+/*详情页*/
+
+header{
+	height:0.92rem;
+	background: #FA3432;
+	display: flex;
+	padding: 0 0.38rem 0 0.3rem;
+	color:#FFFFFF;
+	font-size: 0.28rem;
+	justify-content: space-between;
+	align-items: center;
+	line-height: 1;
+}
+header .icon-fanhui{
+	color:#FFFFFF;
+	font-size: 0.4rem;
+}
+header .icon-caidan{
+	color:#FFFFFF;
+	font-size: 0.35rem;
+}
+/*-----------------------------收益率区域---------------------------------*/
+.raise{
+	line-height: 1.0;
+	height: 2.22rem;
+	color: #fff;
+	text-align: center;
+	background: -webkit-linear-gradient(top , #FF3b31 , #D90806);
+}
+.grow{
+	padding: 0.5rem 0 0.42rem 0;
+	font-size: 0.68rem;
+
+}
+.grow-info{
+	font-size: 0.30rem;
+}
+.grow-info span{
+	margin-right: 0.2rem;
+}
+/*-----------------------------收益率区域---------------------------------*/
+/*-----------------------------项目区域---------------------------------*/
+.project{
+	height: 9.06rem;
+	background-color: #FFFFFF;
+}
+
+.limit{
+	display: flex;
+	height: 0.79rem;
+	font-size: 0.3rem;
+	align-items: center;
+	border-bottom: 1px solid #F4f3f3;
+	color:#f4f3f3;
+}
+.limit a{
+	padding:0 1.05rem;
+	color: #909090;
+}
+
+.advantage-field{
+	margin-top: 0.30rem;
+}
+.advantage{
+	height: 2.03rem;
+	width: 6.4rem;
+	display: flex;
+	margin:0 auto;
+	flex-wrap: wrap;
+	background-image: url(../img/detail_icon_bg.png);
+	background-size: 6.40rem 2.03rem;
+	align-content: space-around;
+}
+.advantage li{
+	width:50%;
+	color:#ffc166;
+	font-size: 0.24rem;
+	height: 0.57rem;
+	text-align:center;
+	line-height: 0.57rem;
+}
+
+.advantage .iconfont{
+	display: inline-block;
+	box-sizing: border-box;
+	width:0.57rem;
+	height: 0.57rem;
+	border:3px solid #eee;
+	font-size: 0.30rem;
+	margin-right: 0.13rem;
+	text-align: center;
+	line-height: 0.51rem;
+	border-radius: 50%;
+} 
+
+.progress{
+	height: 0.9rem;
+	padding:0 0.33rem;
+	position: relative;
+	margin-top: 0.35rem;
+}
+.point{
+	width: 0.6rem;
+	height: 0.32rem;
+	background-color: #FB0502;
+	font-size: 0.24rem;
+	color: #fff;
+	line-height: 0.32rem;
+	text-align: center;
+	position:relative;
+	margin-left:-0.3rem;
+	border-radius: 0.05rem;
+	margin-bottom: 0.17rem;
+	transition: transform 0.5s;
+	
+}
+.tri{
+	position: absolute;
+	left:50%;
+	transform: translateX(-50%);
+	bottom: -0.16rem;
+	border-color: #FB0502 transparent transparent transparent;
+	border-style: solid;
+	margin: 0 auto;
+	border-width:  0.07rem 0.06rem;
+	
+}
+.progressbar{
+	border-radius: 0.08rem;
+	height: 0.16rem;
+	background-color: #f0f0f0;
+	position: relative;
+}
+.progressbar-item{
+	position: absolute;
+	background-color: #FB0502;
+	width: 0;
+	border-radius: 0.08rem;
+	height:100%;
+	transition: width 0.5s; 
+}
+
+.people{
+	display: flex;
+	padding: 0 0.33rem;
+	justify-content: space-between;
+	font-size: 0.22rem;
+	color: #808080;
+}
+.quantity{
+	color:#FB0502;
+}
+.seemore{
+	color:#808080;
+	bottom: 1.40rem;
+	line-height: 1.0;
+	text-align: center;
+	font-size: 0.22rem;
+	position: absolute;
+	left:0;
+	right:0;
+}
+
+
+/*-----------------------------项目区域结束---------------------------------*/
+
+/*-----------------------------评估区域---------------------------------*/
+.evaluate{
+	height:1.07rem;
+	border-top:1px solid #E0E0E0;
+	font-size:0.32rem;
+	padding: 0 0.12rem 0 0.35rem;
+	display: flex;
+	align-items: center;
+	background-color: #F0F0F0;
+	justify-content: space-between;
+	position: absolute;
+	bottom:0;
+	left:0;
+	right:0;
+}
+
+.estimate{
+	color: #FF8800;
+	border-bottom: 2px solid #FF8800;
+	padding-left: 0.05rem;
+}
+.invest{
+	height:0.82rem;
+	width: 5.17rem;
+	background-color: #FA3432;
+	color:#fff;
+	text-align:center;
+	line-height: 0.82rem;
+	border-radius: 0.05rem;
+}
+/*-----------------------------评估区域结束---------------------------------*/
+/*-----------------------------遮照区域结束---------------------------------*/
+.mask{
+	position: absolute;
+	top:0.92rem;
+	left:0;
+	right: 0;
+	bottom:1.08rem;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+}
+nav{
+	height:1.4rem;
+	align-items: center;
+	display: flex;
+	background-color: #FFFFFF;
+}
+nav a{
+	width:25%;
+	height:1.0rem;
+	border-right: 1px solid #FDA6A4;
+	font-size: 0.26rem;
+	text-align: center;
+	color:#FDA6A4;
+}
+nav a:last-child{
+	border-right: none;
+}
+nav .iconfont{
+	font-size:0.4rem;
+	display: block;
+}
+/*-----------------------------遮照区域结束---------------------------------*/
